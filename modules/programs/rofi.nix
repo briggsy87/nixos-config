@@ -14,7 +14,7 @@ in
       enable = true;
       terminal = "${pkgs.alacritty}/bin/alacritty";           # Alacritty is default terminal emulator
       location = "center";
-      theme =  with colors.scheme.dracula; {
+      theme =  with colors.scheme.doom; {
         "*" = {
           spacing = 0;
           background-color = mkLiteral "transparent";

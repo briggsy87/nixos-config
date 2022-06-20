@@ -11,7 +11,7 @@
 #            └─ ./home.nix 
 #
 
-{ lib, inputs, nixpkgs, home-manager, nur, user, location, hyprland, ... }:
+{ lib, inputs, nixpkgs, home-manager, nur, user, location, ... }:
 
 let
   system = "x86_64-linux";                             	    # System architecture
@@ -45,9 +45,8 @@ in
 
   laptop = lib.nixosSystem {                                # Laptop profile
     inherit system;
-    specialArgs = { inherit inputs user location hyprland; };
+    specialArgs = { inherit inputs user location; };
     modules = [
-      hyprland.nixosModules.default
       ./laptop
       ./configuration.nix
 

@@ -16,7 +16,7 @@ in
       package = pkgs.papirus-icon-theme;
       size = "16x16";
     };
-    settings = with colors.scheme.dracula; {               # Settings
+    settings = with colors.scheme.doom; {               # Settings
       global = {
         monitor = 0;
         # geometry [{width}x{height}][+/-{x}+/-{y}]
