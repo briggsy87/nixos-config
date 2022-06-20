@@ -60,7 +60,5 @@
     xorg.xkill
     xorg.xrandr
     xterm
-    #alacritty
-    #sxhkd
   ];
 }
